@@ -2,11 +2,14 @@ package com.hanleybrand.cryspdr;
 
 import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+
+import com.hanleybrand.cryspdr.CommonProxy;
 
 @Mod(modid = Main.MODID, name = Main.MODNAME, version = Main.VERSION)
 
@@ -19,6 +22,9 @@ public class Main
     //
     @Instance
     public static Main instance = new Main();
+
+    @SidedProxy(clientSide="com.hanleybrand.cryspdr.ClientProxy", serverSide="com.hanleybrand.cryspdr.ServerProxy")
+    public static CommonProxy proxy;
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent e) {
