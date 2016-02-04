@@ -1,0 +1,16 @@
+[
+{
+  "modid": "crystalspidersomg",
+  "name": "Crystal Spiders",
+  "description": "It's just you know... some new kind of spider. Probably nothing to worry about.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/hanleybrand/MC-CrystalSpiders",
+  "updateUrl": "",
+  "authorList": ["Hanleybrand"],
+  "credits": "Hanleybrand and the cast of thousands [of ideas]",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
